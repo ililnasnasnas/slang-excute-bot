@@ -1,5 +1,7 @@
 import random
 
+from distro import name
+
 SUBJECTS = ["My cat", "My wifi", "My landlord", "The group chat"]
 ACTIONS = {
     "chill": ["lowkey ghosted me", "was acting sus"],
@@ -19,5 +21,5 @@ def make_excuse(userid, chaos=1):
             return e
     return "I'm out of excuses, no cap."
 
-if __name__ == "__main__":
-    print(make_excuse(userid    =1, chaos=2))
+if name == "main":
+    print(make_excuse(user_id=1, chaos=2))
